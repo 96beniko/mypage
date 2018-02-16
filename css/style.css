@@ -1,0 +1,121 @@
+@charset "UTF-8"
+
+html{
+    font-size: 62.5%;   /* default 15px about 10px */
+}
+
+body {
+    color: #302833; /* kurobeni */
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #9C668B; /* parple */
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    padding: 20px 0 10px;
+    /* background-color: #970747; red */
+    background-color: #C7A0B9;
+    position: fixed;
+    top: 0;
+}
+
+.main{
+    display: block;
+    margin: 134px auto 40px;
+    text-align: center;
+}
+
+.sidemenu{
+    font-family: "Pinyon Script", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    right: 0;
+    top: 134px;
+}
+
+.footer{
+    width: 100%;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    width: 400px;
+    height: 104px;
+    margin: 0 auto;
+    background: url('../images/logo.png') no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.global-nav{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.global-nav .nav-item{
+    display: block;
+    margin: 10px 10px;
+}
+
+.global-nav .nav-item a{
+    display: block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: left;
+    padding-left: 0.5em;
+    border-radius: 5px;
+    color: #9C668B; 
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    transition: 0.15s;
+}
+
+.global-nav .nav-item.active a:before{
+    content: "\1F339 ";
+}
+
+.global-nav .nav-item:not(.active) a{
+  padding-left: 1.5em;
+}
+
+.global-nav .nav-item a:hover{
+    background-color: #9C668B;
+    color: #fff;
+}
+
+.home .image{
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+.me .image{
+    padding-right: 50%;
+}
+
+.me-table{
+    margin-left: auto;
+    margin-right: auto;
+}
