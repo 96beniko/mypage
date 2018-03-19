@@ -6,7 +6,7 @@ html{
 
 body {
     color: #302833; /* kurobeni */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
@@ -17,21 +17,15 @@ body {
 a:link, a:visited, a:hover, a:active {
     color: #9C668B; /* parple */
     text-decoration: none;
+    margin-left: 1em;
 }
 
-.header{
-    width: 100%;
-    padding: 20px 0 10px;
-    /* background-color: #970747; red */
-    background-color: #C7A0B9;
-    position: fixed;
-    top: 0;
-}
-
-.main{
+main{
     display: block;
-    margin: 134px auto 40px;
     text-align: center;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    margin-right: 20%;
 }
 
 .sidemenu{
@@ -40,7 +34,9 @@ a:link, a:visited, a:hover, a:active {
     width: 20%;
     height: 100%;
     right: 0;
-    top: 134px;
+    top: 0;
+    background-image: url(../images/lace.png);
+    background-repeat: repeat-y;
 }
 
 .footer{
@@ -53,69 +49,62 @@ a:link, a:visited, a:hover, a:active {
     clear: both;
 }
 
-.logo {
-    width: 400px;
-    height: 104px;
-    margin: 0 auto;
-    background: url('../images/logo.png') no-repeat;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-}
-
-.logo a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .global-nav{
-    margin-top: 40px;
+    margin-top: 10%;
     text-align: center;
 }
 
 .global-nav .nav-item{
     display: block;
-    margin: 10px 10px;
+    margin: 0.6em 0;
 }
 
 .global-nav .nav-item a{
     display: block;
     width: 100%;
-    height: 70px;
-    line-height: 70px;
+    line-height: 1.2;
     text-align: left;
-    padding-left: 0.5em;
-    border-radius: 5px;
+    padding-left: 0.2em;
     color: #9C668B; 
-    font-size: 2.8rem;
-    letter-spacing: 1px;
+    font-size: 2.6rem;
     transition: 0.15s;
 }
 
-.global-nav .nav-item.active a:before{
-    content: "\1F339 ";
-}
-
-.global-nav .nav-item:not(.active) a{
+.global-nav .nav-item a{
   padding-left: 1.5em;
 }
 
 .global-nav .nav-item a:hover{
-    background-color: #9C668B;
-    color: #fff;
+    text-decoration: underline;
 }
 
-.home .image{
-    padding-top: 100px;
-    padding-bottom: 400px;
-}
-
-.me .image{
-    padding-right: 50%;
+.title{
+    width: 60%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 50%;
 }
 
 .me-table{
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+}
+
+section{
+    margin: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.section-title{
+    padding-top: 10%;
+    font-family: "Pinyon Script", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 3.0rem;
+    color: #9C668B;
+    border-bottom: double 5px #9C668B;
+}
+
+.image{
+    width:70%;
 }
